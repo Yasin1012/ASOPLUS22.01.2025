@@ -41,13 +41,11 @@ export function ViewCompanyModal({
 
           const address = company.addresses[0];
 
-          // If we already have the full address object, use it directly
           if (typeof address === "object" && address.$id) {
             setAddressesData([address as Address]);
             return;
           }
 
-          // Otherwise, fetch it using the ID string
           const addressDoc = await databases.getDocument(
             DATABASE_ID!,
             ADDRESSES_COLLECTION_ID!,
@@ -64,7 +62,7 @@ export function ViewCompanyModal({
             },
           ]);
         } catch (error) {
-          console.error("Error fetching address:", error);
+          console.error("Fehler beim Abrufen der Adresse:", error);
         }
       };
       fetchAddresses();
@@ -76,7 +74,7 @@ export function ViewCompanyModal({
       const fetchUser = async () => {
         try {
           if (!company?.users) {
-            console.log("No user data found");
+            console.log("Keine Benutzerdaten gefunden");
             return;
           }
 
@@ -93,7 +91,6 @@ export function ViewCompanyModal({
               email: userDoc.email,
             });
           } else {
-            
             const user = company.users as unknown as User;
             setUserData({
               $id: user.$id,
@@ -102,7 +99,7 @@ export function ViewCompanyModal({
             });
           }
         } catch (error) {
-          console.error("Error fetching user:", error);
+          console.error("Fehler beim Abrufen des Benutzers:", error);
         }
       };
       fetchUser();
@@ -113,7 +110,7 @@ export function ViewCompanyModal({
     <Dialog open={isOpen} onOpenChange={onClose}>
       <DialogContent className=" sm:max-w-[600px] bg-[#FDF7F4]">
         <DialogHeader>
-          <DialogTitle className="font-poppins font-bold text-2xl text-[#000a14]">Company Details</DialogTitle>
+          <DialogTitle className="font-poppins font-bold text-2xl text-[#000a14]">Unternehmensdetails</DialogTitle>
         </DialogHeader>
 
         <div className="flex flex-col items-center mb-6">
@@ -130,25 +127,25 @@ export function ViewCompanyModal({
 
         <div className="flex gap-6">
           <div className="flex-1">
-            <h3 className="text-lg font-semibold font-poppins mb-3 text-center">Address</h3>
+            <h3 className="text-lg font-semibold font-poppins mb-3 text-center">Adresse</h3>
             <div className="space-y-4">
               {addressesData.map((address, index) => (
                 <div key={index} className="p-3 border-2 border-[#000a14]/10 rounded-lg">
                   <div className="grid gap-1">
                     <div className="font-poppins">
-                      <span className="text-[#000a14] text-lg font-semibold font-poppins">Street:</span>{" "}
+                      <span className="text-[#000a14] text-lg font-semibold font-poppins">Straße:</span>{" "}
                       {address.street}
                     </div>
                     <div className="font-poppins">
-                      <span className="text-[#000a14] text-lg font-semibold font-poppins">City:</span> {address.city}
+                      <span className="text-[#000a14] text-lg font-semibold font-poppins">Stadt:</span> {address.city}
                     </div>
                     <div className="font-poppins">
-                      <span className="text-[#000a14] text-lg font-semibold font-poppins">Postal Code:</span>{" "}
+                      <span className="text-[#000a14] text-lg font-semibold font-poppins">Postleitzahl:</span>{" "}
                       {address.postalCode}
                     </div>
                     {address.country && (
                       <div className="font-poppins">
-                        <span className="text-[#000a14] text-lg font-semibold font-poppins">Country:</span>{" "}
+                        <span className="text-[#000a14] text-lg font-semibold font-poppins">Land:</span>{" "}
                         {address.country}
                       </div>
                     )}
@@ -159,15 +156,15 @@ export function ViewCompanyModal({
           </div>
 
           <div className="flex-1">
-            <h3 className="text-lg font-semibold font-poppins mb-3 text-center">Contact Info</h3>
+            <h3 className="text-lg font-semibold font-poppins mb-3 text-center">Kontaktinformationen</h3>
             <div className="p-3 border-2 border-[#000a14]/10 rounded-lg text-justify">
               <div className="space-y-2 ">
                 <div>
-                  <span className="text-[#000a14] text-lg font-semibold font-poppins">Username:</span>
+                  <span className="text-[#000a14] text-lg font-semibold font-poppins">Benutzername:</span>
                   <p className="font-poppins">{userData?.username}</p>
                 </div>
                 <div>
-                  <span className="text-[#000a14] text-lg font-semibold font-poppins">Email:</span>
+                  <span className="text-[#000a14] text-lg font-semibold font-poppins">E-Mail:</span>
                   <p className="font-poppins">{userData?.email}</p>
                 </div>
               </div>

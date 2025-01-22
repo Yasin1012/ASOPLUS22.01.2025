@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+// biome-ignore lint/style/useImportType: <explanation>
 import { Company, Address } from "@/app/types";
 import { Loader2 } from "lucide-react";
 import {
@@ -92,6 +93,7 @@ export function AddCompanyModal({
 
       const user = await databases.createDocument(
         DATABASE_ID!,
+        // biome-ignore lint/style/noNonNullAssertion: <explanation>
         USERS_COLLECTION_ID!,
         ID.unique(),
         {
@@ -101,7 +103,9 @@ export function AddCompanyModal({
       );
 
       await databases.createDocument(
+        // biome-ignore lint/style/noNonNullAssertion: <explanation>
         DATABASE_ID!,
+        // biome-ignore lint/style/noNonNullAssertion: <explanation>
         COMPANIES_COLLECTION_ID!,
         ID.unique(),
         {
@@ -138,7 +142,7 @@ export function AddCompanyModal({
       <DialogContent className="sm:max-w-[800px] max-h-[90vh] flex flex-col p-0 bg-[#000a14]">
         <DialogHeader className="p-6 pb-2 stroke-white ">
           <DialogTitle className="font-poppins text-center text-white">
-            Add New Company
+            Neues Unternehmen hinzufügen
           </DialogTitle>
           <X
             className="absolute right-4 top-4 h-4 w-4 cursor-pointer text-white hover:text-gray-300"
@@ -172,7 +176,7 @@ export function AddCompanyModal({
               </div>
               <div>
                 <Label htmlFor="name" className="font-poppins text-white">
-                  Company Name
+                  Unternehmensname
                 </Label>
                 <Input
                   id="name"
@@ -189,7 +193,7 @@ export function AddCompanyModal({
                   htmlFor="description"
                   className="font-poppins text-white"
                 >
-                  Description
+                  Beschreibung
                 </Label>
                 <Textarea
                   id="description"
@@ -206,7 +210,7 @@ export function AddCompanyModal({
               </div>
               <div>
                 <Label htmlFor="dealValue" className="font-poppins text-white">
-                  Deal Value
+                  Mitarbeiter Anzahl
                 </Label>
                 <Input
                   id="dealValue"
@@ -224,7 +228,7 @@ export function AddCompanyModal({
               </div>
               <div>
                 <Label htmlFor="username" className="font-poppins text-white">
-                  Username
+                  Geschäftsführer
                 </Label>
                 <Input
                   id="username"
@@ -255,7 +259,7 @@ export function AddCompanyModal({
 
             <div className="space-y-4">
               <div className="flex justify-between items-center">
-                <Label className="font-poppins text-white">Addresses</Label>
+                <Label className="font-poppins text-white">Addressen</Label>
                 <Button
                   type="button"
                   variant="outline"
@@ -263,7 +267,7 @@ export function AddCompanyModal({
                   onClick={addAddressField}
                 >
                   <Plus className="h-4 w-4 mr-2" />
-                  Add Address
+                  Addresse hinzufügen
                 </Button>
               </div>
               {addresses.map((address, index) => (
@@ -279,7 +283,7 @@ export function AddCompanyModal({
                   </Button>
                   <div className="grid grid-cols-2 gap-4">
                     <div>
-                      <Label className="font-poppins text-white">Street</Label>
+                      <Label className="font-poppins text-white">Straße</Label>
                       <Input
                         required
                         className="bg-gray-700 text-white font-poppins"
@@ -291,7 +295,7 @@ export function AddCompanyModal({
                     </div>
                     <div>
                       <Label className="font-poppins text-white">
-                        Postal Code
+                        Postzeitzahl
                       </Label>
                       <Input
                         required
@@ -303,7 +307,7 @@ export function AddCompanyModal({
                       />
                     </div>
                     <div>
-                      <Label className="font-poppins text-white">City</Label>
+                      <Label className="font-poppins text-white">Stadt</Label>
                       <Input
                         required
                         className="bg-gray-700 text-white font-poppins"
@@ -314,7 +318,7 @@ export function AddCompanyModal({
                       />
                     </div>
                     <div>
-                      <Label className="font-poppins text-white">Country</Label>
+                      <Label className="font-poppins text-white">Land</Label>
                       <Input
                         className="bg-gray-700 text-white font-poppins"
                         value={address.country}
@@ -335,7 +339,7 @@ export function AddCompanyModal({
               onClick={onClose}
               className="bg-red-800 hover:bg-red-700 font-poppins font-medium"
             >
-              Cancel
+              Abbrechen 
             </Button>
             <Button
               type="submit"
@@ -348,7 +352,7 @@ export function AddCompanyModal({
                   Creating...
                 </div>
               ) : (
-                "Create Company"
+                "Unternhemen Erstellen"
               )}
             </Button>
           </DialogFooter>

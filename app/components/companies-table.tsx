@@ -2,6 +2,7 @@
 
 import { Eye, Pencil, Trash2, Download } from "lucide-react";
 import Image from "next/image";
+// biome-ignore lint/style/useImportType: <explanation>
 import { Company } from "@/app/types";
 import { EditCompanyModal } from "./edit-company-modal";
 import { useState } from "react";
@@ -54,14 +55,13 @@ export function CompaniesTable({
   };
 
   const handleViewTemplate = (company: Company) => {
-    
     if (company.$id) {
       onSelectCompany(company.$id);
     }
   };
 
   if (loading) {
-    return <div>Loading...</div>;
+    return <div>Lädt...</div>;
   }
 
   return (
@@ -75,16 +75,16 @@ export function CompaniesTable({
                   Logo
                 </th>
                 <th className="p-4 font-medium font-poppins text-gray-500">
-                  Company Name
+                  Unternehmensname
                 </th>
                 <th className="p-4 font-medium font-poppins text-gray-500">
-                  Description
+                  Beschreibung
                 </th>
                 <th className="p-4 font-medium font-poppins text-gray-500">
-                  Deal Value
+                  Mitarbeiter Anzahl
                 </th>
                 <th className="p-4 font-medium font-poppins text-gray-500">
-                  Actions
+                  Aktionen
                 </th>
               </tr>
             </thead>
@@ -95,7 +95,7 @@ export function CompaniesTable({
                     <div className="w-8 h-8">
                       <Image
                         src={company.logo}
-                        alt={`${company.name} logo`}
+                        alt={`Logo von ${company.name}`}
                         width={32}
                         height={32}
                         className="object-contain"
@@ -109,7 +109,7 @@ export function CompaniesTable({
                     {company.description}
                   </td>
                   <td className="p-4 font-poppins">
-                    ${company.dealValue.toLocaleString()}
+                    {company.dealValue.toLocaleString()}
                   </td>
                   <td className="p-4">
                     <div className="flex gap-2 justify-center">
@@ -162,20 +162,20 @@ export function CompaniesTable({
       <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
         <DialogContent>
           <DialogHeader>
-            <DialogTitle>Select Template</DialogTitle>
+            <DialogTitle>Vorlage auswählen</DialogTitle>
           </DialogHeader>
           <div className="grid gap-4 py-4">
             <Button
               className="w-full"
               onClick={() => handleTemplateSelect("template1")}
             >
-              Template Risk
+              Vorlage Risiko
             </Button>
             <Button
               className="w-full"
               onClick={() => handleTemplateSelect("template2")}
             >
-              Template Form
+              Vorlage Formular
             </Button>
           </div>
         </DialogContent>

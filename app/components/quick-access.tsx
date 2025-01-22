@@ -16,111 +16,131 @@ export function QuickAccessLinks() {
 
   const links = [
     {
-      name: "Financial Overview",
+      name: "Finanzübersicht",
       color: "blue",
-      content: "Comprehensive analysis of company financials including revenue streams, profit margins, cash flow statements, and key performance indicators. Track quarterly growth and financial health metrics."
+      content:
+        "Umfassende Analyse der Unternehmensfinanzen, einschließlich Einnahmequellen, Gewinnmargen, Cashflow-Statements und wichtiger Leistungskennzahlen. Verfolgen Sie das Quartalswachstum und die finanziellen Gesundheitskennzahlen.",
     },
     {
-      name: "Market Analysis",
+      name: "Marktanalyse",
       color: "teal",
-      content: "Detailed market research data, competitor analysis, industry trends, and market share information. Identify opportunities and threats in the current market landscape."
+      content:
+        "Detaillierte Marktforschungsdaten, Wettbewerbsanalysen, Branchentrends und Marktanteilsinformationen. Identifizieren Sie Chancen und Risiken im aktuellen Marktumfeld.",
     },
     {
-      name: "Risk Assessment",
+      name: "Risikobewertung",
       color: "blue",
-      content: "Evaluation of potential risks and challenges facing the organization. Analyze both internal and external factors, and develop mitigation strategies for risk management."
+      content:
+        "Bewertung potenzieller Risiken und Herausforderungen für die Organisation. Analysieren Sie interne und externe Faktoren und entwickeln Sie Strategien zur Risikominderung.",
     },
     {
-      name: "Growth Strategy",
+      name: "Wachstumsstrategie",
       color: "teal",
-      content: "Strategic planning aimed at driving growth in the business. Analyze new market opportunities, product development plans, and scalability potential to enhance revenue and market share."
+      content:
+        "Strategische Planung zur Förderung des Geschäftswachstums. Analysieren Sie neue Marktchancen, Produktentwicklungspläne und Skalierungspotenziale zur Steigerung von Umsatz und Marktanteilen.",
     },
     {
-      name: "Customer Insights",
+      name: "Kundeninformationen",
       color: "blue",
-      content: "In-depth analysis of customer behavior, preferences, and feedback. Use data-driven insights to improve product offerings, service delivery, and customer retention."
+      content:
+        "Detaillierte Analyse des Kundenverhaltens, der Präferenzen und des Feedbacks. Nutzen Sie datenbasierte Erkenntnisse zur Verbesserung von Produktangeboten, Servicebereitstellung und Kundenbindung.",
     },
     {
-      name: "Product Portfolio",
+      name: "Produktportfolio",
       color: "teal",
-      content: "Comprehensive overview of the company’s product offerings, categorizing each based on performance, customer feedback, and market demand. Identify areas for product innovation."
+      content:
+        "Umfassender Überblick über die Produktangebote des Unternehmens, kategorisiert nach Leistung, Kundenfeedback und Marktnachfrage. Identifizieren Sie Bereiche für Produktinnovationen.",
     },
     {
-      name: "Team Structure",
+      name: "Teamstruktur",
       color: "blue",
-      content: "Examine organizational structure, roles, and responsibilities within the team. Assess team performance, communication flow, and collaboration efficiency."
+      content:
+        "Untersuchen Sie die Organisationsstruktur, Rollen und Verantwortlichkeiten im Team. Bewerten Sie die Teamleistung, den Kommunikationsfluss und die Zusammenarbeitseffizienz.",
     },
     {
-      name: "Technology Stack",
+      name: "Technologie-Stack",
       color: "teal",
-      content: "Overview of the technological infrastructure supporting the business. Analyze software, hardware, and platforms being used to ensure they align with company objectives and scalability."
+      content:
+        "Überblick über die technologische Infrastruktur des Unternehmens. Analysieren Sie die eingesetzte Software, Hardware und Plattformen, um sicherzustellen, dass sie den Unternehmenszielen und der Skalierbarkeit entsprechen.",
     },
     {
-      name: "Compliance Status",
+      name: "Compliance-Status",
       color: "blue",
-      content: "Monitor compliance with industry regulations, standards, and legal requirements. Assess company’s adherence to ethical practices and risk of non-compliance."
+      content:
+        "Überwachung der Einhaltung von Branchenvorschriften, Standards und rechtlichen Anforderungen. Bewerten Sie die Einhaltung ethischer Praktiken und das Risiko von Regelverstößen.",
     },
     {
-      name: "Investment Plans",
+      name: "Investitionspläne",
       color: "teal",
-      content: "Detailed review of future investment opportunities, including capital expenditure plans, strategic investments, and funding sources for growth initiatives."
+      content:
+        "Detaillierte Übersicht über zukünftige Investitionsmöglichkeiten, einschließlich Investitionsausgaben, strategischer Investitionen und Finanzierungsquellen für Wachstumsinitiativen.",
     },
     {
-      name: "Partnership Network",
+      name: "Partnernetzwerk",
       color: "blue",
-      content: "Analysis of key partnerships, joint ventures, and alliances. Explore the strategic value of each partnership and the opportunities for expanding the business network."
+      content:
+        "Analyse wichtiger Partnerschaften, Joint Ventures und Allianzen. Erkunden Sie den strategischen Wert jeder Partnerschaft und die Möglichkeiten zur Erweiterung des Geschäftsnetzwerks.",
     },
     {
-      name: "Marketing Strategy",
+      name: "Marketingstrategie",
       color: "teal",
-      content: "Comprehensive marketing plan outlining digital, social, and traditional marketing approaches. Track customer engagement, brand awareness, and the effectiveness of campaigns."
+      content:
+        "Umfassender Marketingplan mit digitalen, sozialen und traditionellen Marketingansätzen. Verfolgen Sie Kundenbindung, Markenbekanntheit und die Effektivität von Kampagnen.",
     },
     {
-      name: "Operations Report",
+      name: "Betriebsbericht",
       color: "blue",
-      content: "In-depth report on operational efficiency, production timelines, logistics, and resource management. Identify bottlenecks and optimize processes for cost reduction and efficiency."
+      content:
+        "Detaillierter Bericht über die Betriebseffizienz, Produktionszeiten, Logistik und Ressourcenmanagement. Identifizieren Sie Engpässe und optimieren Sie Prozesse zur Kostensenkung und Effizienzsteigerung.",
     },
     {
-      name: "Sustainability Goals",
+      name: "Nachhaltigkeitsziele",
       color: "teal",
-      content: "Strategic initiatives aimed at achieving environmental sustainability. Track carbon footprint, waste management, and renewable energy usage to align with corporate responsibility goals."
+      content:
+        "Strategische Initiativen zur Erreichung ökologischer Nachhaltigkeit. Verfolgen Sie den CO₂-Fußabdruck, die Abfallbewirtschaftung und die Nutzung erneuerbarer Energien, um mit den Unternehmensverantwortlichkeiten in Einklang zu stehen.",
     },
     {
-      name: "Innovation Pipeline",
+      name: "Innovationspipeline",
       color: "blue",
-      content: "Overview of research and development efforts aimed at bringing innovative products and services to market. Track project stages and expected timelines for new launches."
+      content:
+        "Überblick über Forschungs- und Entwicklungsbemühungen, die darauf abzielen, innovative Produkte und Dienstleistungen auf den Markt zu bringen. Verfolgen Sie Projektphasen und erwartete Zeitpläne für neue Produkteinführungen.",
     },
     {
-      name: "Quality Metrics",
+      name: "Qualitätsmetriken",
       color: "teal",
-      content: "Key performance indicators related to product or service quality. Track customer satisfaction, defect rates, and adherence to quality standards to ensure superior delivery."
+      content:
+        "Leistungskennzahlen im Zusammenhang mit Produkt- oder Dienstleistungsqualität. Verfolgen Sie die Kundenzufriedenheit, Fehlerquoten und die Einhaltung von Qualitätsstandards, um eine überlegene Lieferung zu gewährleisten.",
     },
     {
-      name: "Customer Support",
+      name: "Kundensupport",
       color: "blue",
-      content: "Evaluate customer service operations, including response time, resolution rates, and customer satisfaction. Identify opportunities for improving customer service processes."
+      content:
+        "Bewerten Sie die Kundenservice-Aktivitäten, einschließlich Reaktionszeit, Lösungsquoten und Kundenzufriedenheit. Identifizieren Sie Möglichkeiten zur Verbesserung der Kundenservice-Prozesse.",
     },
     {
-      name: "Sales Pipeline",
+      name: "Vertriebspipeline",
       color: "teal",
-      content: "Monitor sales leads, conversion rates, and sales cycles. Track key performance metrics, forecast revenue, and identify areas for optimizing sales strategies."
+      content:
+        "Verfolgen Sie Verkaufsleads, Konversionsraten und Verkaufszyklen. Überwachen Sie Leistungskennzahlen, prognostizieren Sie Einnahmen und identifizieren Sie Bereiche zur Optimierung von Verkaufsstrategien.",
     },
     {
-      name: "Training Programs",
+      name: "Schulungsprogramme",
       color: "blue",
-      content: "Overview of employee training initiatives, professional development opportunities, and skill-building programs. Measure employee engagement and skill improvement."
+      content:
+        "Überblick über Schulungsinitiativen für Mitarbeiter, berufliche Entwicklungsmöglichkeiten und Kompetenzaufbauprogramme. Messen Sie die Mitarbeiterbindung und die Verbesserung von Fähigkeiten.",
     },
     {
-      name: "Global Presence",
+      name: "Globale Präsenz",
       color: "teal",
-      content: "Overview of international operations, regional market penetration, and global expansion strategies. Track presence across different countries and regions."
+      content:
+        "Überblick über internationale Aktivitäten, regionale Marktdurchdringung und globale Expansionsstrategien. Verfolgen Sie die Präsenz in verschiedenen Ländern und Regionen.",
     },
   ];
 
   const handleLinkClick = (link: (typeof links)[0]) => {
     setSelectedLink({
       ...link,
-      content: link.content || "Content coming soon...",
+      content: link.content || "Inhalt folgt in Kürze...",
     });
     setShowModal(true);
   };
@@ -129,7 +149,7 @@ export function QuickAccessLinks() {
     <>
       <div className="bg-white p-6 rounded-lg shadow-sm mb-6">
         <h2 className="text-lg font-poppins font-semibold mb-4 text-[#05004E]">
-          Quick Access Links
+          Schnelle Zugriffslinks
         </h2>
         <div className="flex flex-wrap gap-2">
           {links.map((link) => (

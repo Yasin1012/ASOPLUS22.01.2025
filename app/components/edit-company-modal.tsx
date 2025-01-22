@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+// biome-ignore lint/style/useImportType: <explanation>
 import { Company } from "@/app/types";
 import {
   Dialog,
@@ -12,8 +13,9 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
-import {  X } from "lucide-react";
+import { X } from "lucide-react";
 import { Loader2 } from "lucide-react";
+
 interface EditCompanyModalProps {
   company: Company | null;
   isOpen: boolean;
@@ -64,7 +66,7 @@ export function EditCompanyModal({
       await onUpdate(company.$id, updates);
       onClose();
     } catch (error) {
-      console.error("Error updating company:", error);
+      console.error("Fehler beim Aktualisieren des Unternehmens:", error);
     } finally {
       setLoading(false);
     }
@@ -73,8 +75,10 @@ export function EditCompanyModal({
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
       <DialogContent className="sm:max-w-[425px] bg-[#000a14]">
-        <DialogHeader >
-          <DialogTitle className="font-poppins font-bold text-2xl text-[#f0f1f2] text-center mb-6">Edit Company Details</DialogTitle>
+        <DialogHeader>
+          <DialogTitle className="font-poppins font-bold text-2xl text-[#f0f1f2] text-center mb-6">
+            Unternehmensdetails bearbeiten
+          </DialogTitle>
           <X
             className="absolute right-4 top-4 h-4 w-4 cursor-pointer text-white hover:text-gray-300"
             onClick={onClose}
@@ -82,7 +86,9 @@ export function EditCompanyModal({
         </DialogHeader>
         <form onSubmit={handleSubmit} className="space-y-4">
           <div className="space-y-2 font-poppins">
-            <Label htmlFor="name" className="font-semibold text-[#ffffff]">Company Name</Label>
+            <Label htmlFor="name" className="font-semibold text-[#ffffff]">
+              Unternehmensname
+            </Label>
             <Input
               id="name"
               className="bg-gray-700 text-white"
@@ -91,7 +97,9 @@ export function EditCompanyModal({
             />
           </div>
           <div className="space-y-2 font-poppins">
-            <Label htmlFor="logo" className="font-semibold text-[#ffffff]">Logo URL</Label>
+            <Label htmlFor="logo" className="font-semibold text-[#ffffff]">
+              Logo-URL
+            </Label>
             <Input
               id="logo"
               className="bg-gray-700 text-white"
@@ -100,7 +108,9 @@ export function EditCompanyModal({
             />
           </div>
           <div className="space-y-2 font-poppins">
-            <Label htmlFor="description" className="font-semibold text-[#ffffff]">Description</Label>
+            <Label htmlFor="description" className="font-semibold text-[#ffffff]">
+              Beschreibung
+            </Label>
             <Textarea
               id="description"
               className="bg-gray-700 text-white"
@@ -109,24 +119,27 @@ export function EditCompanyModal({
             />
           </div>
           <div className="space-y-2 font-poppins">
-            <Label htmlFor="dealValue" className="font-semibold text-[#ffffff]">Deal Value</Label>
+            <Label htmlFor="dealValue" className="font-semibold text-[#ffffff]">
+              Mitarbeiter Anzahl
+            </Label>
             <Input
               id="dealValue"
               className="bg-gray-700 text-white"
               type="number"
               value={formData.dealValue || ""}
               onChange={(e) =>
+                // biome-ignore lint/style/useNumberNamespace: <explanation>
                 handleChange("dealValue", parseFloat(e.target.value))
               }
             />
           </div>
           <div className="flex justify-end gap-3">
-          <Button
+            <Button
               type="button"
               onClick={onClose}
               className="bg-red-800 hover:bg-red-700 font-poppins font-medium"
             >
-              Cancel
+              Abbrechen
             </Button>
             <Button
               type="submit"
@@ -136,10 +149,10 @@ export function EditCompanyModal({
               {loading ? (
                 <div className="flex items-center gap-2">
                   <Loader2 className="h-4 w-4 animate-spin" />
-                  Updating...
+                  Aktualisieren...
                 </div>
               ) : (
-                "Update Company"
+                "Unternehmen aktualisieren"
               )}
             </Button>
           </div>
