@@ -6,7 +6,7 @@ const GetStarted = () => (
     <div className="flexCenter flex-col bg-primary w-[100%] h-[100%] rounded-full">
       <div className="flexStart flex-row">
         <p className="font-poppins font-medium text-[18px] leading-[23.4px]">
-          <span className="text-gradient">Get</span>
+          <span className="text-gradient">Starten</span>
         </p>
         <Image
           src={arrowUp}
@@ -18,7 +18,7 @@ const GetStarted = () => (
       </div>
 
       <p className="font-poppins font-medium text-[18px] leading-[23.4px]">
-        <span className="text-gradient">Started</span>
+        <span className="text-gradient">Sie jetzt</span>
       </p>
     </div>
   </div>
