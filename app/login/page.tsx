@@ -39,18 +39,18 @@ export default function LoginPage() {
     <div className="dark min-h-screen flex items-center justify-center bg-gradient-custom1 bg-[#01101f]">
       <div className="max-w-md w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 shadow-input dark:border-neutral-700 dark:bg-background font-poppins">
         <h2 className="font-bold text-xl text-center dark:text-neutral-200">
-          Login to your Account
+          In ihren Account einloggen
         </h2>
         <p className="text-neutral-300 text-center text-sm max-w-sm mt-2">
-          Sign up to access your dashboard
+          Erstellen Sie sich einen Account um Zugriff zu erhalten
         </p>
 
         <form className="my-8" onSubmit={handleSubmit}>
           <LabelInputContainer className="mb-4">
-            <Label htmlFor="email">Email Address</Label>
+            <Label htmlFor="email">E-Mail</Label>
             <Input
               id="email"
-              placeholder="you@example.com"
+              placeholder="du@beispiel.com"
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
@@ -59,7 +59,7 @@ export default function LoginPage() {
           </LabelInputContainer>
 
           <LabelInputContainer className="mb-4">
-            <Label htmlFor="password">Password</Label>
+            <Label htmlFor="password">Passwort</Label>
             <Input
               id="password"
               placeholder="••••••••"
@@ -78,7 +78,7 @@ export default function LoginPage() {
             {isLoading ? (
                 <div className="flex items-center justify-center gap-2">
                   <Loader2 className="h-4 w-4 animate-spin" />
-                  Logging in...
+                  Einloggen...
                 </div>
               ) : (
                 "Login"
@@ -89,9 +89,9 @@ export default function LoginPage() {
           <div className="bg-gradient-to-r from-transparent via-neutral-300 dark:via-neutral-700 to-transparent my-8 h-[1px] w-full" />
 
           <p className="text-center text-sm text-neutral-600 dark:text-neutral-300">
-            Don't have an account?{" "}
+            Sie haben keinen Account?{" "}
             <Link href="/signup" className="text-primary hover:underline">
-              Sign up
+              Account erstellen
             </Link>
           </p>
         </form>

@@ -19,7 +19,7 @@ export default function TemplateForm({
           Rosenberger
         </h1>
         <h1 className="text-2xl font-bold text-muted-foreground font-poppins text-center">
-          risk assessment
+          Gefährdungsbeurteilung
         </h1>
         <hr className="border-t-2 border-gray-400 mb-4" />
         <Card className="border-2 border-black/50 rounded-none">
@@ -27,60 +27,60 @@ export default function TemplateForm({
             <div className="grid grid-cols-1 divide-y-4 divide-gray-400 font-poppins font-semibold">
               
               <FormField
-                label="Company:"
+                label="Unternehmen:"
                 defaultValue={companyName}
               />
               <FormField
-                label="Address:"
-                defaultValue="Hohlohstraße 2, 75305 Neuenbürg"
+                label="Addreses:"
+                defaultValue=""
               />
-              <FormField label="Phone:" defaultValue="07082 9388670" />
-              <FormField label="Fax:" defaultValue="0 7082 93886717" />
+              <FormField label="Telefon:" defaultValue="" />
+              <FormField label="Telefax:" defaultValue="" />
               <FormField
                 label="E-mail:"
-                defaultValue="info-rsn@rosenberger.com"
+                defaultValue=""
               />
               <FormField
-                label="Managing Director:"
-                defaultValue="Mr. Rudolf Gropper"
+                label="Geschäftsführer:"
+                defaultValue=""
               />
-              <FormField label="Building:" defaultValue="main building" />
-              <FormField label="Department:" defaultValue="toolmaking" />
-              <FormField label="Work area:" defaultValue="Synchropress" />
+              <FormField label="Gebäude:" defaultValue="" />
+              <FormField label="Abteilung:" defaultValue="" />
+              <FormField label="Arbeitsbereich:" defaultValue="" />
               <FormField
-                label="Responsible:"
-                defaultValue="Mr. Rene Schäflel"
-              />
-              <FormField
-                label="Occupational safety specialist:"
-                defaultValue="External: Bernhard Decker / SmK Security with Concept"
-              />
-              <FormField label="company doctor:" defaultValue="Dr. Henssler" />
-              <FormField
-                label="Safety Officer:"
-                defaultValue="D. Dettinger, B. Linnemann, R. Anderson, V. Kindsvater"
+                label="Verantwortlicher:"
+                defaultValue=""
               />
               <FormField
-                label="Fire protection assistant:"
-                defaultValue="See notice"
+                label="Fachkraft für Betriebssicherheit:"
+                defaultValue="External: Bernhard Decker / Sicherheit mit Konzept"
               />
-              <FormField label="First Aiders:" defaultValue="See notice" />
+              <FormField label="Betriebsarzt:" defaultValue="" />
               <FormField
-                label="Created by:"
-                defaultValue="Mr. Rene Schäflel with external support from Mr. Bernhard Decker (SmK Sicherheit mit Konzept GmbH)"
+                label="Sicherheitsbeauftragter:"
+                defaultValue=""
               />
               <FormField
-                label="Creation date:"
+                label="Brandschutzhelfer:"
+                defaultValue=""
+              />
+              <FormField label="Ersthelfer:" defaultValue="" />
+              <FormField
+                label="Erstellt durch:"
+                defaultValue="statisch / dynamisch?"
+              />
+              <FormField
+                label="Erstellungs-Datum:"
                 defaultValue="September 5, 2024"
               />
-              <FormField label="Revised:" />
-              <FormField label="Individual identifier:" />
+              <FormField label="Überarbeitet:" />
+              <FormField label="Individuelle Kennung:" />
             </div>
 
             <div className="grid grid-cols-3 gap-4 p-4 font-poppins font-semibold ">
-              <SignatureField label="Created by:" />
-              <SignatureField label="Release by responsible person:" />
-              <SignatureField label="Approval by management:" />
+              <SignatureField label="Erstellt durch:" />
+              <SignatureField label="Freigabe durch Verantwortlichen:" />
+              <SignatureField label="Freigabe durch Geschäftsführung:" />
             </div>
           </form>
         </Card>
@@ -118,7 +118,7 @@ function SignatureField({ label }: SignatureFieldProps) {
     <div className="text-center">
       <div className="h-20 border-b border-gray-300 mb-2"></div>
       <div className="text-sm text-gray-600">{label}</div>
-      <div className="text-xs text-gray-500">Name / Date / Signature</div>
+      <div className="text-xs text-gray-500">Name / Datum / Unterschrift</div>
     </div>
   );
 }

@@ -15,11 +15,10 @@ const CardDeal = () => (
       viewport={{ once: true }}
     >
       <h2 className="heading2">
-      Find something better <br className="sm:block hidden" /> in a few simple ways.
+      Daten verstreut <br className="sm:block hidden" /> in unzähligen Ordnern?
       </h2>
       <p className="paragraph max-w-[470px] mt-5">
-        Arcu tortor, purus in mattis at sed integer faucibus. Aliquet quis
-        aliquet eget mauris tortor.ç Aliquet ultrices ac, ametau.
+      Unser CRM bündelt all Ihre Daten an einem zentralen Ort – keine verstreuten Informationen mehr. Kundenkontakte, Projekte und Beurteilungen sind leicht zugänglich, aktualisierbar und teilbar. So sparen Sie Zeit, reduzieren Fehler und arbeiten effizienter!
       </p>
 
       <Button styles={`mt-10`} />

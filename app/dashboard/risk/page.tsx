@@ -21,7 +21,7 @@ export default function risk() {
       <div className=" w-[23rem] rounded-lg overflow-hidden shadow-lg bg-[#001529] border-2 border-gray-800">
         <div className="px-6 py-4">
           <h2 className="text-xl font-bold mb-2 text-white font-poppins text-center">
-            Risk Assessment
+            Gefährdungsbeurteilung
           </h2>
         </div>
         <hr className="border-t border-gray-200" />
@@ -40,7 +40,7 @@ export default function risk() {
             variant="outline"
             onClick={handleTemplate1Click}
           >
-            Template-1
+            Rosenberger
           </Button>
         </div>
       </div>
@@ -49,7 +49,7 @@ export default function risk() {
       <div className="w-[23rem] rounded-lg overflow-hidden shadow-lg bg-[#001529] border-2 border-gray-800">
         <div className="px-6 py-4">
           <h2 className="text-xl font-bold mb-2 text-white font-poppins text-center">
-            Operating Instructions
+            Betriebsanweisung
           </h2>
         </div>
         <hr className="border-t border-gray-200" />
@@ -68,7 +68,7 @@ export default function risk() {
             variant="outline"
             onClick={handleTemplate2Click}
           >
-            Template-2
+            315_BA_Lager_allgemein
           </Button>
         </div>
       </div>

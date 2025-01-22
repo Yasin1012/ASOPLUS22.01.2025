@@ -7,11 +7,11 @@ const Testimonials = () => (
 
     <div className="w-full flex justify-between items-center md:flex-row flex-col sm:mb-16 mb-6 relative z-[1]">
       <h2 className="heading2">
-        What People are <br className="sm:block hidden" /> saying about us
+        Was andere <br className="sm:block hidden" /> über uns sagen
       </h2>
       <div className="w-full md:mt-0 mt-6">
         <p className="paragraph text-left max-w-[450px]">
-        Lorem Ipsum bla bla lb asda asd asaw dsa dawa das ddasd aw da awwawdasd awa das
+        Effizienzsteigerung nach nur 14 Tagen: Unsere Kundenbewertungen
         </p>
       </div>
     </div>

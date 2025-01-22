@@ -75,80 +75,80 @@ const TemplateRisk = forwardRef<
   const [content, setContent] = useState({
     title: "315_BA_Lager_allgemein",
     scope:
-      "This operating instruction applies to general work in the warehouse",
+      "Diese Betriebsanweisung gilt für allgemeine Arbeiten im Lager",
     dangers: [
       {
-        text: "Dangers arise when shelves are overloaded or when stored or transported goods fall over or fall down.",
+        text: "Gefahren bestehen bei Überlastung von Regalen, durch umstürzendes bzw. herabfallendes Lager− und Transportgut.",
         selected: true,
       },
       {
-        text: "There is a risk of crushing between industrial trucks and storage facilities as well as from the industrial truck when sharing traffic routes with pedestrians.",
+        text: "Es bestehen Quetschgefahren zwischen Flurförderfahrzeugen und Lagereinrichtungen sowie durch das Flurförderzeug bei gemeinsamer Nutzung von Verkehrswegen mit Fußgängern.",
         selected: true,
       },
     ],
     protectiveMeasures: [
       {
-        text: "Storage equipment must be set up in such a way that it cannot tip over. When loaded, the maximum permissible shelf, bay and floor load at the installation location must not be exceeded. Permissible shelf and bay loads must be noted on the rack.",
+        text: "Lagereinrichtungen müssen so aufgestellt sein, dass sie nicht umstürzen können. Im beladenen Zustand darf die höchstzulässige Fach−, Feld− und Bodenbelastung am Aufstellungsort nicht überschritten werden. Zulässige Fach− und Feldbelastungen sind am Regal zu vermerken.",
         selected: true,
       },
       {
-        text: "The shelving system must be checked for damage and stability at least once a year by a designated person.",
+        text: "Regalanlage ist mindestens jährlich durch eine beauftragte Person auf Beschädigungen und Standsicherheit zu überprüfen.",
         selected: true,
       },
       {
-        text: "Uneven floors and tripping hazards must be removed immediately.",
+        text: "Fußbodenunebenheiten und Stolperstellen sind sofort zu beseitigen.",
         selected: true,
       },
       {
-        text: "There must be adequately dimensioned traffic routes/aisles between storage facilities and vehicles and they must be adequately lit.",
+        text: "Zwischen Lagereinrichtungen und Fahrzeugen müssen ausreichend bemessene Verkehrswege / Gänge vorhanden und ausreichend beleuchtet sein.",
         selected: true,
       },
       {
-        text: "The loading must be carried out in such a way that the load cannot fall out and does not protrude into the traffic routes.",
+        text: "Die Beladung hat so zu erfolgen, dass das Ladegut nicht herausfallen kann und nicht in die Verkehrswege hineinragt.",
         selected: true,
       },
       {
-        text: "The traffic routes must be kept clear and must not be used for storage.",
+        text: "Die Verkehrswege sind freizuhalten und dürfen nicht zur Lagerung benutzt werden.",
         selected: true,
       },
     ],
     disruptions: [
       {
-        text: "In case of irregularities or malfunctions, switch off work equipment/machine.",
+        text: "Bei Unregelmäßigkeiten und Störungen Arbeitsmittel / Maschine abstellen",
         selected: true,
       },
       {
-        text: "Secure against being switched on again.",
+        text: "Gegen Wiedereinschalten sichern.",
         selected: true,
       },
       {
-        text: "Touch buttons/tools only to be moved when the machine is at a standstill.",
+        text: "Störungen nur im Stillstand beseitigen.",
         selected: true,
       },
       {
-        text: "Inform superiors.",
+        text: "Vorgesetzten informieren.",
         selected: true,
       },
       {
-        text: "Repairs should only be carried out by qualified personnel.",
+        text: "Reparaturen nur durch Fachpersonal durchführen lassen.",
         selected: true,
       },
     ],
     accident: [
       {
-        text: "Keep calm and protect yourself.",
+        text: "Ruhe bewahren und Selbstschutz beachten.",
         selected: true,
       },
       {
-        text: "Switch off the machine and secure the accident site.",
+        text: "Maschine abschalten, Unfallstelle absichern.",
         selected: true,
       },
       {
-        text: "Inform first responders, observe rescue chain.",
+        text: "Ersthelfer informieren, Rettungskette beachten.",
         selected: true,
       },
       {
-        text: "Inform superiors.",
+        text: "Vorgesetzten informieren.",
         selected: true,
       },
     ],
@@ -210,7 +210,7 @@ const TemplateRisk = forwardRef<
             </div>
 
             <div className="text-center flex-grow">
-              <h1 className="text-2xl font-bold">OPERATING INSTRUCTIONS</h1>
+              <h1 className="text-2xl font-bold">BETRIEBSANWEISUNG</h1>
               <p className="mt-2 font-bold text-xl">{content.title}</p>
             </div>
             <div className="text-right">
@@ -224,13 +224,13 @@ const TemplateRisk = forwardRef<
           <div className="grid grid-cols-2 gap-4">
             <div className="">
               <div className="bg-[#0000FF] text-white p-2 mb-2 text-center">
-                Operation / part of the building:
+              Betrieb / Gebäudeteil:
               </div>
               <div className="border border-black h-16 mb-4"></div>
             </div>
             <div>
               <div className="bg-[#0000FF] text-white text-center p-2 mb-2 ">
-                Scope:
+              Anwendungsbereich:
               </div>
               <div
                 contentEditable
@@ -251,7 +251,7 @@ const TemplateRisk = forwardRef<
 
           <div className="mb-4">
             <div className="bg-[#0000FF] text-white text-center p-2 mb-2">
-              Dangers for people and the environment
+            Gefahren für Mensch und Umwelt
             </div>
             <div className="flex gap-6">
               <div className="flex flex-col gap-4 mb-2">
@@ -339,7 +339,7 @@ const TemplateRisk = forwardRef<
 
           <div className="mb-4">
             <div className="bg-[#0000FF] text-white text-center p-2 mb-2">
-              Protective measures and rules of conduct
+            Schutzmaßnahmen und Verhaltensregeln
             </div>
             <div className="flex gap-6">
               <div className="flex flex-col gap-4 mb-2">
@@ -427,7 +427,7 @@ const TemplateRisk = forwardRef<
 
           <div className="mb-4">
             <div className="bg-[#0000FF] text-white text-center p-2 mb-2">
-              Behavior in the event of disruptions and danger
+            Verhalten bei Störungen und im Gefahrenfall
             </div>
             <div className="flex justify-between">
               <div className="flex gap-6">
@@ -496,7 +496,7 @@ const TemplateRisk = forwardRef<
 
           <div className="mb-4">
             <div className="bg-[#0000FF] text-white text-center p-2 mb-2">
-              Behavior in the event of an accident / First Aid
+            Verhalten bei Unfällen / Erste Hilfe
             </div>
             <div className="flex justify-between">
               <div className="flex gap-[5.5rem]">
@@ -556,7 +556,7 @@ const TemplateRisk = forwardRef<
 
           <div>
             <div className="bg-[#0000FF] text-white text-center p-2">
-              maintenance and proper disposal
+            Instandhaltung und sachgerechte Entsorgung
             </div>
           </div>
         </div>

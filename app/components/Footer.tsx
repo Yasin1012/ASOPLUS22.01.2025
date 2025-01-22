@@ -15,7 +15,7 @@ const Footer = () => (
           className="object-contain"
         />
         <p className="paragraph mt-4 max-w-[312px]">
-        Your partner for security: Intelligent CRM and automatic hazard documentation – simple and efficient!
+        Ihr Partner für Sicherheit: Intelligentes CRM und automatische Gefahrendokumentation – einfach und effizient!
         </p>
       </div>
 

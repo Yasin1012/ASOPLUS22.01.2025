@@ -25,7 +25,7 @@ const Hero = () => {
 
         <div className="flex flex-row justify-between items-center w-full">
           <h1 className="flex-1 font-poppins font-semibold ss:text-[72px] text-[52px] text-white ss:leading-[100.8px] leading-[75px]">
-            The Next <br className="sm:block hidden" />{" "}
+            Die nächste <br className="sm:block hidden" />{" "}
             <span className="text-gradient">Generation</span>{" "}
           </h1>
           <div className="ss:flex hidden md:mr-4 mr-0">
@@ -34,11 +34,10 @@ const Hero = () => {
         </div>
 
         <h1 className="font-poppins font-semibold ss:text-[68px] text-[52px] text-white ss:leading-[100.8px] leading-[75px] w-full">
-        occupational safety
+        Arbeitssicherheit
         </h1>
         <p className="paragraph max-w-[470px] mt-5">
-        Optimize your occupational safety processes with our user-friendly CRM. Manage training, risks and documentation centrally and sustainably improve safety in your company.
-        </p>
+        Optimieren Sie Arbeitssicherheit mit unserem CRM. Schulungen, Risiken, Dokumente zentral verwalten und Sicherheit steigern.        </p>
       </motion.div>
 
       <motion.div

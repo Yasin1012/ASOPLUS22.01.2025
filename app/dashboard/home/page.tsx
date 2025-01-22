@@ -125,7 +125,7 @@ export default function DashboardPage() {
             <Building2 className="h-5 w-5 text-muted-foreground" />
             <div>
               <p className="text-sm font-medium font-poppins text-muted-foreground">
-                Number of companies
+                Anzahl Unternehmen
               </p>
               <h2 className="text-3xl font-semibold font-poppins">30</h2>
             </div>
@@ -147,7 +147,7 @@ export default function DashboardPage() {
             <Users className="h-5 w-5 text-muted-foreground" />
             <div>
               <p className="text-sm font-medium font-poppins text-muted-foreground">
-                Number of contacts
+                Anzahl Kontakte
               </p>
               <h2 className="text-3xl font-semibold font-poppins">87</h2>
             </div>
@@ -169,7 +169,7 @@ export default function DashboardPage() {
             <PieChart className="h-5 w-5 text-muted-foreground" />
             <div>
               <p className="text-sm font-medium font-poppins text-muted-foreground">
-                Total deals in pipeline
+               -----
               </p>
               <h2 className="text-3xl font-semibold font-poppins">288</h2>
             </div>
@@ -190,7 +190,7 @@ export default function DashboardPage() {
       <Card>
         <CardContent className="p-6">
           <h3 className="font-semibold text-lg mb-4 text-[#000a14] font-poppins">
-            Latest Activities
+            Letzte Aktivitäten
           </h3>
           <div className="space-y-4 font-arial">
             {activities.map((activity) => (

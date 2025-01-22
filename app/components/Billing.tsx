@@ -34,12 +34,13 @@ const Billing = () => (
       whileInView="show"
       viewport={{ once: true }}
     >
-      <h2 className="heading2">
-        Control your customers  <br className="sm:block hidden" /> & Documents
-      </h2>
-      <p className="paragraph max-w-[470px] mt-5">
-      Optimize your processes with automatic document creation and a flexible CRM that adapts perfectly to your individual needs!
-      </p>
+     <h2 className="heading2">
+  Verwalten Sie Ihre Kunden <br className="sm:block hidden" /> & Dokumente
+</h2>
+<p className="paragraph max-w-[470px] mt-5">
+  Optimieren Sie Ihre Prozesse mit automatischer Dokumentenerstellung und einem flexiblen CRM, das sich perfekt an Ihre individuellen Bedürfnisse anpasst!
+</p>
+
 
     </motion.div>
   </section>

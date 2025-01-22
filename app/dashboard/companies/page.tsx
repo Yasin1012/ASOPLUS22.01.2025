@@ -223,13 +223,13 @@ export default function CompaniesPage() {
               className="w-full"
               onClick={() => handleTemplateSelect("template1")}
             >
-              Vorlage Risiko
+              Betriebsanweisung Lager
             </Button>
             <Button
               className="w-full"
               onClick={() => handleTemplateSelect("template2")}
             >
-              Vorlage Formular
+              Gefährdungsbeurteilung
             </Button>
           </div>
         </DialogContent>

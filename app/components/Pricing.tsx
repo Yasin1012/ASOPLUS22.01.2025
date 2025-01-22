@@ -19,33 +19,33 @@ interface PricingPlan {
 
 const plans: PricingPlan[] = [
   {
-    title: "Landing page",
+    title: "Landingpage",
     price: "€29",
     features: [
-      "Individual page without subpages",
-      "Setting up Google Analytics",
-      "Changes once a quarter*",
-      "data protection compliant",
-      "Legal Content",
-      "search engine optimization",
-      "Responsive Design",
-      "Basic Support",
+      "Individuelle Seite ohne Unterseiten",
+      "Einrichtung von Google Analytics",
+      "Änderungen einmal pro Quartal*",
+      "Datenschutzkonform",
+      "Rechtssichere Inhalte",
+      "Suchmaschinenoptimierung",
+      "Responsives Design",
+      "Basis-Support",
     ],
   },
   {
     title: "Starter",
     price: "€39",
     features: [
-      "3 Individual Pages",
-      "Setting up Google Analytics",
-      "Changes twice a quarter*",
-      "data protection compliant",
-      "Legal Content",
-      "search engine optimization",
-      "Responsive Design",
-      "domain + 3 email mailboxes",
-      "Basic Support",
-      "data backup",
+      "3 individuelle Seiten",
+      "Einrichtung von Google Analytics",
+      "Änderungen zweimal pro Quartal*",
+      "Datenschutzkonform",
+      "Rechtssichere Inhalte",
+      "Suchmaschinenoptimierung",
+      "Responsives Design",
+      "Domain + 3 E-Mail-Postfächer",
+      "Basis-Support",
+      "Datensicherung",
     ],
     isPopular: true,
   },
@@ -53,21 +53,22 @@ const plans: PricingPlan[] = [
     title: "Business",
     price: "€59",
     features: [
-      "6 Individual Pages",
-      "Setting up Google Analytics",
-      "Changes 3x per quarter*",
-      "data protection compliant",
-      "Legal Content",
-      "search engine optimization",
-      "Responsive Design",
-      "domain + 10 email mailboxes",
-      "Individual SEO consulting once a year",
-      "appointment booking system",
-      "Prioritized Support",
-      "data backup",
-      "website analysis report",
+      "6 individuelle Seiten",
+      "Einrichtung von Google Analytics",
+      "Änderungen dreimal pro Quartal*",
+      "Datenschutzkonform",
+      "Rechtssichere Inhalte",
+      "Suchmaschinenoptimierung",
+      "Responsives Design",
+      "Domain + 10 E-Mail-Postfächer",
+      "Individuelle SEO-Beratung einmal jährlich",
+      "Terminbuchungssystem",
+      "Priorisierter Support",
+      "Datensicherung",
+      "Website-Analysebericht",
     ],
   },
+  
 ];
 
 function PricingCard({
@@ -86,14 +87,14 @@ function PricingCard({
         <CardTitle className="text-2xl text-center">{title}</CardTitle>
         {isPopular && (
           <span className=" px-4 py-1 w-[6rem] text-xs text-center font-semibold text-white bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-full">
-            Most used
+            Beliebt
           </span>
         )}
       </CardHeader>
       <CardContent className="flex-grow">
         <div className="text-4xl font-bold mb-4">
           {price}
-          <span className="text-xl font-normal">/Month</span>
+          <span className="text-xl font-normal">/Monat</span>
         </div>
         <ul className="space-y-2">
           {features.map((feature, index) => (
@@ -105,7 +106,7 @@ function PricingCard({
         </ul>
       </CardContent>
       <CardFooter className="mt-auto">
-        <Button className={`w-full ${isPopular ? "bg-white text-primary font-medium hover:bg-white hover:text-primary":""}`}>Subscribe</Button>
+        <Button className={`w-full ${isPopular ? "bg-white text-primary font-medium hover:bg-white hover:text-primary":""}`}>Abonnieren</Button>
       </CardFooter>
     </Card>
   );
@@ -116,10 +117,10 @@ export default function Pricing() {
     <div className="py-12 px-4 sm:px-6 lg:px-8">
       <div className="text-center mb-12 font-poppins">
         <h2 className="text-3xl font-bold text-white sm:text-4xl">
-          Choose the right plan for you
+          Wähle den richtigen Plan
         </h2>
         <p className="mt-4 text-xl text-gray-600 dark:text-gray-300">
-          Simple, transparent pricing that grows with you
+          Einfach, transparente Preise die mit dir wachsen
         </p>
       </div>
       <div className="grid gap-8 lg:grid-cols-3 lg:gap-12 justify-center">

@@ -49,13 +49,11 @@ const Business = () => (
       viewport={{ once: true }}
     >
       <h2 className="heading2">
-        You do the business, <br className="sm:block hidden" /> we&#8217;ll
-        handle the money.
+        Warum Sie sich für <br className="sm:block hidden" /> uns entscheiden.
+        
       </h2>
       <p className="paragraph max-w-[470px] mt-5">
-        With the right credit card, you can improve your financial life by
-        building credit, earning rewards and saving money. But with hundreds of
-        credit cards on the market.
+      Unser CRM zentralisiert Prozesse, spart Zeit und verbessert die Kommunikation – perfekt für effizientes Arbeiten und nachhaltiges Wachstum.
       </p>
 
       <Button styles={`mt-10`} />

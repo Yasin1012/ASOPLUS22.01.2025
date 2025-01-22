@@ -175,7 +175,7 @@ export function CompaniesTable({
               className="w-full"
               onClick={() => handleTemplateSelect("template2")}
             >
-              Vorlage Formular
+              Gefährdungsbeurteilung
             </Button>
           </div>
         </DialogContent>

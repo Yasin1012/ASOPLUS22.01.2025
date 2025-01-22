@@ -43,49 +43,47 @@ import {
     {
       id: "feature-1",
       icon: star,
-      title: "Hazard Document",
-      content:
-        "Fast document creation using our tool with",
+      title: "Effizienz steigern",
+      content: "Automatisierte Prozesse sparen Zeit und reduzieren Fehler – für maximale Produktivität.",
     },
     {
       id: "feature-2",
       icon: shield,
-      title: "100% Security",
-      content:
-        "We take proactive steps make sure your information are secure.",
+      title: "Daten zentralisieren",
+      content: "Alles an einem Ort: Kundenkontakte, Projekte und Berichte für mehr Übersichtlichkeit.",
     },
     {
       id: "feature-3",
       icon: send,
-      title: "Easy Handling",
-      content:
-        "Our user-friendly website gives you quick access to all features – all with just a few clicks!",
+      title: "Zusammenarbeit verbessern",
+      content: "Optimierte Kommunikation und klare Aufgabenverteilung fördern reibungslose Teamarbeit.",
     },
+    
   ];
   
   export const feedback = [
     {
       id: "feedback-1",
       content:
-        "Money is only a tool. It will take you wherever you wish, but it will not replace you as the driver.",
+        "Das CRM optimiert unsere Abläufe perfekt. Unsere Produktivität ist gestiegen, und die automatische Dokumentation erleichtert den Alltag enorm.",
       name: "Herman Jensen",
-      title: "Founder & Leader",
+      title: "Gründer",
       img: people01,
     },
     {
       id: "feedback-2",
       content:
-        "Money makes your life easier. If you're lucky to have it, you're lucky.",
+        "Seit der Einführung des CRMs läuft alles strukturierter. Wir sparen Zeit und vermeiden Fehler – ein großer Gewinn für unser Unternehmen.",
       name: "Steve Mark",
-      title: "Founder & Leader",
+      title: "Gründer",
       img: people02,
     },
     {
       id: "feedback-3",
       content:
-        "It is usually people in the money business, finance, and international trade that are really rich.",
+        "Dieses CRM hat unsere Arbeit effizienter gemacht. Automatische Aufgabenverteilung und klare Prozesse sparen uns täglich Zeit. Absolut empfehlenswert!",
       name: "Kenn Gallagher",
-      title: "Founder & Leader",
+      title: "Gründer",
       img: people03,
     },
   ];
@@ -93,83 +91,86 @@ import {
   export const stats = [
     {
       id: "stats-1",
-      title: "User Active",
-      value: "3800+",
+      title: "Benutzer",
+      value: "250+",
     },
     {
       id: "stats-2",
-      title: "Trusted by Company",
-      value: "230+",
+      title: "Unternehmen",
+      value: "20+",
     },
     {
       id: "stats-3",
-      title: "Transaction",
-      value: "$230M+",
+      title: "Platzhalter",
+      value: "23%",
     },
   ];
   
   export const footerLinks = [
     {
-      title: "Useful Links",
+      title: "Nutzvolle Links",
       links: [
         {
-          name: "Content",
-          link: "https://www.hoobank.com/content/",
+          name: "Inhalt",
+          link: "https://www.asoplus.com/content/",
         },
         {
-          name: "How it Works",
-          link: "https://www.hoobank.com/how-it-works/",
+          name: "Wie es funktioniert",
+          link: "https://www.asop.com/how-it-works/",
         },
         {
-          name: "Create",
-          link: "https://www.hoobank.com/create/",
+          name: "Erstellen",
+          link: "https://www.asoplus.com/create/",
         },
         {
-          name: "Explore",
-          link: "https://www.hoobank.com/explore/",
+          name: "Entdecken",
+          link: "https://www.asoplus.com/explore/",
         },
         {
-          name: "Terms & Services",
-          link: "https://www.hoobank.com/terms-and-services/",
+          name: "AGB",
+          link: "https://www.asoplus.com/terms-and-services/",
         },
+        
       ],
     },
     {
       title: "Community",
       links: [
         {
-          name: "Help Center",
-          link: "https://www.hoobank.com/help-center/",
+          name: "Hilfe-Center",
+          link: "https://www.asoplus.com/help-center/",
         },
         {
-          name: "Partners",
-          link: "https://www.hoobank.com/partners/",
+          name: "Partner",
+          link: "https://www.asoplus.com/partners/",
         },
         {
-          name: "Suggestions",
-          link: "https://www.hoobank.com/suggestions/",
+          name: "Vorschläge",
+          link: "https://www.asoplus.com/suggestions/",
         },
         {
           name: "Blog",
-          link: "https://www.hoobank.com/blog/",
+          link: "https://www.asoplus.com/blog/",
         },
         {
-          name: "Newsletters",
-          link: "https://www.hoobank.com/newsletters/",
+          name: "Newsletter",
+          link: "https://www.asoplus.com/newsletters/",
         },
+        
       ],
     },
     {
       title: "Partner",
       links: [
         {
-          name: "Our Partner",
-          link: "https://www.hoobank.com/our-partner/",
+          name: "Unser Partner",
+          link: "https://www.asoplus.com/our-partner/",
         },
         {
-          name: "Become a Partner",
-          link: "https://www.hoobank.com/become-a-partner/",
+          name: "Partner werden",
+          link: "https://www.asoplus.com/become-a-partner/",
         },
+        
       ],
     },
   ];
